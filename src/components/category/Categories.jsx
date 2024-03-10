@@ -1,8 +1,20 @@
-import React from 'react'
+import {categories} from '../../data/categories'
+import { CategoryContainer, CategoryWrap } from './CategoryStyles'
+import Category from './Category/'
 
 function Categories() {
   return (
-    <div>Categories</div>
+    <CategoryContainer>
+      <h2>Categories</h2>
+
+      <CategoryWrap>
+        {categories.map(cat =>(
+          <Category key={cat.id} {...cat}/>
+        )
+        )};
+      </CategoryWrap>
+    
+    </CategoryContainer>
   )
 }
 

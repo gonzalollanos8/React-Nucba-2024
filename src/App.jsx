@@ -1,8 +1,10 @@
 import Navbar from './components/navbar/Navbar';
 import Hero from './components/hero/Hero';
-// import Footer from './components/footer/Footer';
+import Products from './components/product/Products';
+import Footer from './components/footer/Footer';
 import Layout from './components/layout/Layout';
-// import Categories from './components/category/Categories';
+import Categories from './components/category/Categories';
+
 
 function App() {
 
@@ -12,11 +14,10 @@ function App() {
       <Navbar/>
         <Layout>
           <Hero/>
-          
+          <Categories/>
+          <Products/>
         </Layout>
-      
-      {/* <Footer/>  */}
-      
+      <Footer/> 
     </>
   )
 }

@@ -1,8 +1,11 @@
-import React from 'react'
+import { CategoryCard } from "./CategoryStyles"
 
-function Category() {
+function Category({img,name,category}) {
   return (
-    <div>Category</div>
+    <CategoryCard>
+    <img src={img} alt={category} />
+    <h2>{name}</h2>
+    </CategoryCard>
   )
 }
 
