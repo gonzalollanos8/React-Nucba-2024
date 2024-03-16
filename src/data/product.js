@@ -1,7 +1,7 @@
 export const prodData = [
     {
         id: 1,
-        mar: "Honda",
+        marc: "Honda",
         model:  "Civic",
         type : "JDM",
         year:  1998,

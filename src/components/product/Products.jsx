@@ -9,7 +9,7 @@ function Products() {
             {prodData.map(prod =>(
                 <Product  key={prod.id} {...prod}/>
             )
-            )};
+            )}
         </ContainerProd>
 
     )

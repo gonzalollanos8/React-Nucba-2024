@@ -6,8 +6,8 @@ export const ContainerProd = styled.div`
     flex-wrap:wrap;
     justify-content: space-between;   
     align-items: center;  
-    margin: 10px; 
-    gap: 5px;
+    padding: 10px; 
+    margin: 10px;
 
 `
 
@@ -15,14 +15,17 @@ export const ContainerProd = styled.div`
 export const CardProd = styled.div `
     display: flex;
     flex-direction: column;
-    width: 200px;
+    align-items: center;
+    width: 300px;
     height: 380px;
-    border-radius: 8px;
-    overflow: hidden;
+    border-radius: 10px;
+    border: #ff6b6c solid 1px;
+    padding: 20px;
+    margin: 10px 0px;
 
     button{
-        width: 50px;
-        height: 25px;
+        width: 100px;
+        height: 50px;
         background: #ff6b6c;
         color: white;
         font-weight: bold;
@@ -31,4 +34,26 @@ export const CardProd = styled.div `
         border-radius: 4px;
         cursor: pointer;
     }
+
+    img{
+        width: 80%;
+        height: 50%;
+        object-fit: cover;
+    }
+
+    .title{
+        h2{
+            color: #ff6b6c;
+        }
+        h3{
+            font-size: 16px;
+        }
+    }
+
+    .info{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
 `

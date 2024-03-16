@@ -11,7 +11,7 @@ function Categories() {
         {categories.map(cat =>(
           <Category key={cat.id} {...cat}/>
         )
-        )};
+        )}
       </CategoryWrap>
     
     </CategoryContainer>
