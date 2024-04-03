@@ -1,25 +1,31 @@
+import { ContainerProd, BtnContainer } from "./productsStyle";
+import {ProdData} from "../../data"
 import Product from "./Product";
-import { ContainerProd } from "./productsStyle";
-import {prodData} from "../../data/product"
 
 
 function Products() {
+
+    console.log(Object.entries(ProdData))
+    // console.log(ProdData)
     return (
     <>
         <ContainerProd>
-            {prodData.map(prod =>(
-                <Product  key={prod.id} {...prod}/>
+            {ProdData.map(prod =>(
+                <Product key={prod.id} {...prod}/>
             )
             )}
         </ContainerProd>
         
-        <button 
-        onClick={e => e.preventDefault()} secondary= 'true' disabled= 'true'>
-            <span>Ver menos</span>
-        </button>
-        <button onClick={e => e.preventDefault()} disabled='true'>
-                <span>Ver más</span>
-        </button>
+        <BtnContainer>
+            <button className="btn"
+            onClick={e => e.preventDefault()} secondary= 'true' disabled= 'true'>
+                <span>Ver menos</span>
+            </button>
+            <button className="btn"
+            onClick={e => e.preventDefault()} disabled='true'>
+                    <span>Ver más</span>
+            </button>
+        </BtnContainer>
     </>
     )
 }

@@ -10,7 +10,7 @@ function Hero() {
       </HeroTextStyle>
 
       <HeroImg>
-        <img src="../../../public/civic.png" alt="Car" />
+        <img src="../../../public/civic.png" alt="Car"/>
       </HeroImg>
 
     </HeroContainerStyle>

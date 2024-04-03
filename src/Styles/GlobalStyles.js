@@ -7,7 +7,7 @@ export const GlobalStyles = createGlobalStyle`
     :root{
         --principal-color: #050505;
         --secondary-color: #f12d0f;
-        --background: #fff;
+        --background: #272932;
     }
 
     html{
@@ -21,7 +21,7 @@ export const GlobalStyles = createGlobalStyle`
         padding: 0;
         box-sizing: border-box;
         font-family: 'Roboto', sans-serif;
-        
+        background-color: var(--background);
     }
 
     li{

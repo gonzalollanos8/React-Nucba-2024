@@ -5,7 +5,7 @@ export const CategoryContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: red;
+    background-color: #ff6b6e;
     width: 100vw;
 `
 

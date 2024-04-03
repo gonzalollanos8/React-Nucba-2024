@@ -1,9 +1,9 @@
-export const prodData = [
+export const ProdData = [
     {
         id: 1,
         marc: "Honda",
         model:  "Civic",
-        type : "JDM",
+        type : "jdm",
         year:  1998,
         color: "Red",
         price: 3000,
@@ -13,7 +13,7 @@ export const prodData = [
         id: 2,
         marc: "Toyota",
         model:  "Celica",
-        type : "JDM",
+        type : "jdm",
         year:  1995,
         color: "Black",
         price : 2400,
@@ -23,7 +23,7 @@ export const prodData = [
         id: 3,
         marc: "Nissan",
         model: "Skyline",
-        type : "JDM",
+        type : "jdm",
         year : 1998,
         color: "Blue",
         price : 15000,
@@ -33,7 +33,7 @@ export const prodData = [
         id: 4,
         marc : "Mazda",
         model: "RX-7", 
-        type : "JDM",
+        type : "jdm",
         year : 2006,
         color:"White",
         price : 10000,
@@ -43,7 +43,7 @@ export const prodData = [
         id: 5,
         marc:"Toyota" ,
         model : "Supra",
-        type : "JDM",
+        type : "jdm",
         year : 2000,
         color : "White",
         price : 15000,
@@ -53,7 +53,7 @@ export const prodData = [
         id: 6,
         marc :"Honda", 
         model : "Nsx",
-        type : "JDM",
+        type : "jdm",
         year : 1998,
         color : "White",
         price : 10000,
@@ -149,4 +149,13 @@ export const prodData = [
         price : 8000,
         img:"https://i.pinimg.com/564x/b6/6f/2c/b66f2ce2737c7a462b0002a8432aae2f.jpg"
     }
-]
+];
+
+export const TotalProducts = ProdData.length;
+
+export const Products = ProdData.reduce((acc,Prod) =>{
+    if (!acc[Prod.type]){
+        acc[Prod.type]=[];
+    }
+    return acc[Prod.type] = [...acc[Prod.type], Prod ];
+})

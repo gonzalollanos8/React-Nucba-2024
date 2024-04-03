@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const FooterStyle = styled.div`
-    background: red;
+    background: #ff6b6e;
     display: flex;
     justify-content: space-around;
     align-items: center;
