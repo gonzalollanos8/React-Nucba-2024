@@ -5,7 +5,7 @@ import Category from './Category/'
 function Categories() {
   return (
     <CategoryContainer>
-      <h2>Categories</h2>
+      <h2 className='sectionTitle'>Types</h2>
 
       <CategoryWrap>
         {categories.map(cat =>(

@@ -9,10 +9,6 @@ function Hero() {
           <p>Search your favorite car</p>
       </HeroTextStyle>
 
-      <HeroImg>
-        <img src="../../../public/civic.png" alt="Car"/>
-      </HeroImg>
-
     </HeroContainerStyle>
   )
 }

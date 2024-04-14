@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
 export const FooterStyle = styled.div`
-    background: #ff6b6e;
+    background: #F1ECBF;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: start;
     width: 100vw;
-    color: white;
+    color: #050505;
 `
 
 export const FooterColumn = styled.div`
@@ -20,5 +20,21 @@ export const FooterColumn = styled.div`
     li{
         text-align: start;
         cursor: pointer;
+        font-size: 16px;
+        font-weight: 600;
+
+        .links{
+            text-decoration: underline dotted;
+        }
     }
+`
+
+export const SocialMedia = styled.div`
+    display: flex;
+    gap: 10px;
+    font-size: 40px;
+    align-items: center;
+    justify-content: space-around;
+    width: 200px;
+    cursor: pointer;
 `

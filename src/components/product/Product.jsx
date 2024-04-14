@@ -1,4 +1,5 @@
 import { CardProd } from "./productsStyle"
+import { BsCartPlusFill } from "react-icons/bs";
 
 
 function Product({img,marc,model,type,year,color,price}) {
@@ -7,8 +8,8 @@ function Product({img,marc,model,type,year,color,price}) {
         <img src={img} alt={model} />
         <div className="product-info">
             <div className="title">
-                    <h2>{model}</h2>
-                    <h3>{marc}</h3>
+                    <h2>{marc} {model}</h2>
+                    
             </div>
             <div className="info">
                     <p>Type: {type}</p>
@@ -17,7 +18,7 @@ function Product({img,marc,model,type,year,color,price}) {
             </div>
             <div className="prices">
                     <span>Price: ${price}.00</span>
-                    <button> + Cart</button>
+                    <button><BsCartPlusFill /></button>
             </div>
         </div>
     </CardProd>

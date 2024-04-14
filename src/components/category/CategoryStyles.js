@@ -4,9 +4,19 @@ import styled from "styled-components";
 export const CategoryContainer = styled.div`
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background-color: #ff6b6e;
+    align-items: stretch;
+    justify-content: space-around;
+    background-color: #222222;
     width: 100vw;
+    height: 100vh;
+
+    .sectionTitle{
+        font-family: "Poppins", sans-serif;
+        color: white;
+        font-weight: 800;
+        font-size: 90px;
+        margin: 10px 10px 10px 120px;
+    }
 `
 
 export const CategoryWrap  = styled.div`
@@ -23,12 +33,24 @@ export const CategoryCard = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 20%;
+    justify-content: center;
+    height: 400px;
+    width: 300px;
+    border: 5px solid #F1ECBF;
     border-radius: 10px;
-    background-color: #ffff;
+    background-color: #2222;
 
+    h2{
+        
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-size: 60px;
+        font-style: normal;
+        color: #F1ECBF;
+    }
 
     img{
         width: 80%;
+        margin-top: 100px;
     }
 `

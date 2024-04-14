@@ -1,4 +1,4 @@
-import { ContainerProd, BtnContainer } from "./productsStyle";
+import { ContainerProd, BtnContainer, SectionTitle } from "./productsStyle";
 import {ProdData} from "../../data"
 import Product from "./Product";
 
@@ -9,6 +9,9 @@ function Products() {
     // console.log(ProdData)
     return (
     <>
+        <SectionTitle>
+        <h2 className="sectionTitle">Cars</h2>
+        </SectionTitle>
         <ContainerProd>
             {ProdData.map(prod =>(
                 <Product key={prod.id} {...prod}/>
@@ -19,11 +22,11 @@ function Products() {
         <BtnContainer>
             <button className="btn"
             onClick={e => e.preventDefault()} secondary= 'true' disabled= 'true'>
-                <span>Ver menos</span>
+                <span>See less</span>
             </button>
             <button className="btn"
             onClick={e => e.preventDefault()} disabled='true'>
-                    <span>Ver más</span>
+                    <span>See more</span>
             </button>
         </BtnContainer>
     </>
